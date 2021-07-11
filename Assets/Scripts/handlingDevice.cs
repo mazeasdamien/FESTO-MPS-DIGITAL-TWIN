@@ -5,48 +5,48 @@ namespace festo
 {
     public class handlingDevice : MonoBehaviour
     {
-        public PLC_Output_Manager StationManager;
+        public PLC_Output_Manager PLC_Output_Manager;
 
         void Update()
         {
             if (Input.GetKey(KeyCode.RightArrow))
             {
-                StationManager.handlingDeviceLeft = false;
-                StationManager.handlingDeviceRight = true;
+                PLC_Output_Manager.handlingDeviceLeft = false;
+                PLC_Output_Manager.handlingDeviceRight = true;
 
             }
             else if (Input.GetKey(KeyCode.LeftArrow))
             {
-                StationManager.handlingDeviceRight = false;
-                StationManager.handlingDeviceLeft = true;
+                PLC_Output_Manager.handlingDeviceRight = false;
+                PLC_Output_Manager.handlingDeviceLeft = true;
 
             }
             else
             {
-                StationManager.handlingDeviceRight = false;
-                StationManager.handlingDeviceLeft = false;
+                PLC_Output_Manager.handlingDeviceRight = false;
+                PLC_Output_Manager.handlingDeviceLeft = false;
             }
 
             if (Input.GetKey(KeyCode.DownArrow))
             {
-                    StationManager.liftingCylinder = true;
+                    PLC_Output_Manager.liftingCylinder = true;
 
 
             }
             else
             { 
-                    StationManager.liftingCylinder = false;
+                    PLC_Output_Manager.liftingCylinder = false;
 
             }
 
             if (Input.GetKey(KeyCode.Space))
             {
-                StationManager.gripperClose = true;
+                PLC_Output_Manager.gripperClose = true;
 
             }
             else
             {
-                StationManager.gripperClose = false;
+                PLC_Output_Manager.gripperClose = false;
             }
         }
     }

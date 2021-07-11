@@ -479,6 +479,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piece (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1826928909295970280, guid: 4cd173d42e258094ba589b619cffdc3a, type: 3}
+      propertyPath: m_TagString
+      value: mouseHoverInfo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4cd173d42e258094ba589b619cffdc3a, type: 3}
 --- !u!1 &106648601
@@ -751,6 +755,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piece (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1826928909295970280, guid: 4cd173d42e258094ba589b619cffdc3a, type: 3}
+      propertyPath: m_TagString
+      value: mouseHoverInfo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4cd173d42e258094ba589b619cffdc3a, type: 3}
 --- !u!224 &166976487 stripped
@@ -774,7 +782,6 @@ GameObject:
   - component: {fileID: 197765557}
   - component: {fileID: 197765560}
   - component: {fileID: 197765559}
-  - component: {fileID: 197765558}
   m_Layer: 10
   m_Name: C4
   m_TagString: Untagged
@@ -801,14 +808,6 @@ RectTransform:
   m_AnchoredPosition: {x: 18.52, y: -6.6}
   m_SizeDelta: {x: 28.005241, y: 4.035484}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &197765558
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 197765556}
-  m_CullTransparentMesh: 1
 --- !u!114 &197765559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1002,6 +1001,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piece (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1826928909295970280, guid: 4cd173d42e258094ba589b619cffdc3a, type: 3}
+      propertyPath: m_TagString
+      value: mouseHoverInfo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4cd173d42e258094ba589b619cffdc3a, type: 3}
 --- !u!1 &212606276
@@ -1069,15 +1072,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 301688347}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 173}
+  m_LocalScale: {x: 0.4943191, y: 0.4943191, z: 0.4943191}
   m_Children: []
   m_Father: {fileID: 717862613}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -618, y: -197}
+  m_AnchoredPosition: {x: -782, y: -124}
   m_SizeDelta: {x: 678.977, y: 332.981}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &301688349
@@ -1233,7 +1236,6 @@ GameObject:
   - component: {fileID: 341112697}
   - component: {fileID: 341112700}
   - component: {fileID: 341112699}
-  - component: {fileID: 341112698}
   m_Layer: 10
   m_Name: C1
   m_TagString: Untagged
@@ -1260,14 +1262,6 @@ RectTransform:
   m_AnchoredPosition: {x: -10.81, y: -6.6}
   m_SizeDelta: {x: 28.005241, y: 4.035484}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &341112698
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 341112696}
-  m_CullTransparentMesh: 1
 --- !u!114 &341112699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1515,11 +1509,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Name
-      value: DS1
+      value: Pneumatic cylinder
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Layer
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
+      propertyPath: m_TagString
+      value: mouseHoverInfo
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1638,8 +1636,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1491627850, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
+      propertyPath: m_Name
+      value: Pneumatic cylinder
+      objectReference: {fileID: 0}
+    - target: {fileID: 1491627850, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Layer
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1491627850, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
+      propertyPath: m_TagString
+      value: mouseHoverInfo
       objectReference: {fileID: 0}
     - target: {fileID: 1491627851, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_LocalScale.x
@@ -1783,6 +1789,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piece (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1826928909295970280, guid: 4cd173d42e258094ba589b619cffdc3a, type: 3}
+      propertyPath: m_TagString
+      value: mouseHoverInfo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4cd173d42e258094ba589b619cffdc3a, type: 3}
 --- !u!1 &533439255
@@ -1827,11 +1837,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Name
-      value: SD1
+      value: Limit switch
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Layer
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
+      propertyPath: m_TagString
+      value: mouseHoverInfo
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1952,8 +1966,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1491627850, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
+      propertyPath: m_Name
+      value: Limit switch
+      objectReference: {fileID: 0}
+    - target: {fileID: 1491627850, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Layer
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1491627850, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
+      propertyPath: m_TagString
+      value: mouseHoverInfo
       objectReference: {fileID: 0}
     - target: {fileID: 1491627851, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_LocalScale.x
@@ -1974,27 +1996,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Name
-      value: 1B1
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-    - target: {fileID: 11400000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
-      propertyPath: m_text
-      value: 1B1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
-      propertyPath: m_lineSpacing
-      value: -47.17
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
-      propertyPath: m_HorizontalAlignment
-      value: 1
+      value: Magnetic sensor
       objectReference: {fileID: 0}
     - target: {fileID: 22495902, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Pivot.x
@@ -2031,18 +2033,6 @@ PrefabInstance:
     - target: {fileID: 22495902, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_SizeDelta.y
       value: 4.035484
-      objectReference: {fileID: 0}
-    - target: {fileID: 22495902, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.29851738
-      objectReference: {fileID: 0}
-    - target: {fileID: 22495902, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.29851738
-      objectReference: {fileID: 0}
-    - target: {fileID: 22495902, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.29851738
       objectReference: {fileID: 0}
     - target: {fileID: 22495902, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2093,16 +2083,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1491627850, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1491627851, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 4.866385
-      objectReference: {fileID: 0}
-    - target: {fileID: 1491627851, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -17.17
+      propertyPath: m_TagString
+      value: mouseHoverInfo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
@@ -2115,11 +2097,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Name
-      value: V1
+      value: Pressure Switch
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Layer
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
+      propertyPath: m_TagString
+      value: mouseHoverInfo
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -2238,8 +2224,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1491627850, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
+      propertyPath: m_Name
+      value: Pressure Switch
+      objectReference: {fileID: 0}
+    - target: {fileID: 1491627850, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Layer
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1491627850, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
+      propertyPath: m_TagString
+      value: mouseHoverInfo
       objectReference: {fileID: 0}
     - target: {fileID: 1491627851, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_LocalScale.x
@@ -2293,6 +2287,7 @@ Transform:
   - {fileID: 400483443}
   - {fileID: 1019822814}
   - {fileID: 2083869870}
+  - {fileID: 1132300480}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2305,11 +2300,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Name
-      value: 2B1
+      value: Magnetic sensor
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Layer
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
+      propertyPath: m_TagString
+      value: mouseHoverInfo
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -2424,8 +2423,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1491627850, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
+      propertyPath: m_Name
+      value: Magnetic sensor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1491627850, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Layer
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1491627850, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
+      propertyPath: m_TagString
+      value: mouseHoverInfo
       objectReference: {fileID: 0}
     - target: {fileID: 1491627851, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_LocalScale.x
@@ -2701,6 +2708,8 @@ RectTransform:
   - {fileID: 90752078}
   - {fileID: 301688348}
   - {fileID: 737486531}
+  - {fileID: 1247987790}
+  - {fileID: 1946249252}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2719,7 +2728,6 @@ GameObject:
   m_Component:
   - component: {fileID: 717867569}
   - component: {fileID: 717867568}
-  - component: {fileID: 717867567}
   - component: {fileID: 717867566}
   m_Layer: 9
   m_Name: RIGHT
@@ -2745,14 +2753,6 @@ MonoBehaviour:
   freeLookSensitivity: 3
   zoomSensitivity: 10
   fastZoomSensitivity: 50
---- !u!81 &717867567
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 717867565}
-  m_Enabled: 1
 --- !u!20 &717867568
 Camera:
   m_ObjectHideFlags: 0
@@ -2825,7 +2825,7 @@ GameObject:
   - component: {fileID: 727586016}
   m_Layer: 7
   m_Name: Gripper
-  m_TagString: Untagged
+  m_TagString: mouseHoverInfo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2929,15 +2929,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 737486530}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 173}
+  m_LocalScale: {x: 0.4943191, y: 0.4943191, z: 0.4943191}
   m_Children: []
   m_Father: {fileID: 717862613}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 347, y: -197}
+  m_AnchoredPosition: {x: 182, y: -124}
   m_SizeDelta: {x: 678.977, y: 332.981}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &737486532
@@ -3149,6 +3149,67 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 772535348}
   m_CullTransparentMesh: 1
+--- !u!1001 &788460235
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 610533642}
+    m_Modifications:
+    - target: {fileID: 824738621922545608, guid: 4cd173d42e258094ba589b619cffdc3a, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 824738621922545608, guid: 4cd173d42e258094ba589b619cffdc3a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -20.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 824738621922545608, guid: 4cd173d42e258094ba589b619cffdc3a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 24.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 824738621922545608, guid: 4cd173d42e258094ba589b619cffdc3a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 824738621922545608, guid: 4cd173d42e258094ba589b619cffdc3a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 824738621922545608, guid: 4cd173d42e258094ba589b619cffdc3a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 824738621922545608, guid: 4cd173d42e258094ba589b619cffdc3a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 824738621922545608, guid: 4cd173d42e258094ba589b619cffdc3a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 824738621922545608, guid: 4cd173d42e258094ba589b619cffdc3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 824738621922545608, guid: 4cd173d42e258094ba589b619cffdc3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 824738621922545608, guid: 4cd173d42e258094ba589b619cffdc3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1826928909295970280, guid: 4cd173d42e258094ba589b619cffdc3a, type: 3}
+      propertyPath: m_Name
+      value: piece (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1826928909295970280, guid: 4cd173d42e258094ba589b619cffdc3a, type: 3}
+      propertyPath: m_TagString
+      value: mouseHoverInfo
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4cd173d42e258094ba589b619cffdc3a, type: 3}
 --- !u!1 &800139573
 GameObject:
   m_ObjectHideFlags: 0
@@ -3329,6 +3390,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piece (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1826928909295970280, guid: 4cd173d42e258094ba589b619cffdc3a, type: 3}
+      propertyPath: m_TagString
+      value: mouseHoverInfo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4cd173d42e258094ba589b619cffdc3a, type: 3}
 --- !u!1 &860340546
@@ -3342,7 +3407,6 @@ GameObject:
   - component: {fileID: 860340547}
   - component: {fileID: 860340550}
   - component: {fileID: 860340549}
-  - component: {fileID: 860340548}
   m_Layer: 10
   m_Name: C3
   m_TagString: Untagged
@@ -3369,14 +3433,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0.2, y: -6.6}
   m_SizeDelta: {x: 28.005241, y: 4.035484}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &860340548
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 860340546}
-  m_CullTransparentMesh: 1
 --- !u!114 &860340549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3685,6 +3741,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piece (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1826928909295970280, guid: 4cd173d42e258094ba589b619cffdc3a, type: 3}
+      propertyPath: m_TagString
+      value: mouseHoverInfo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4cd173d42e258094ba589b619cffdc3a, type: 3}
 --- !u!1001 &932473511
@@ -3696,11 +3756,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Name
-      value: F1
+      value: Inductive proximity sensor
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
+      propertyPath: m_TagString
+      value: mouseHoverInfo
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -3819,8 +3883,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1491627850, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
+      propertyPath: m_Name
+      value: Inductive proximity sensor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1491627850, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1491627850, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
+      propertyPath: m_TagString
+      value: mouseHoverInfo
       objectReference: {fileID: 0}
     - target: {fileID: 1491627851, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_LocalScale.x
@@ -3907,7 +3979,6 @@ GameObject:
   m_Component:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
-  - component: {fileID: 963194226}
   - component: {fileID: 963194230}
   m_Layer: 9
   m_Name: LEFT
@@ -3916,14 +3987,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &963194226
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
 --- !u!20 &963194227
 Camera:
   m_ObjectHideFlags: 0
@@ -4008,11 +4071,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Name
-      value: 1B3
+      value: Magnetic sensor
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
+      propertyPath: m_TagString
+      value: mouseHoverInfo
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -4127,8 +4194,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1491627850, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
+      propertyPath: m_Name
+      value: Magnetic sensor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1491627850, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1491627850, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
+      propertyPath: m_TagString
+      value: mouseHoverInfo
       objectReference: {fileID: 0}
     - target: {fileID: 1491627851, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_LocalScale.x
@@ -4260,11 +4335,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Name
-      value: F2
+      value: Inductive proximity sensor
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
+      propertyPath: m_TagString
+      value: mouseHoverInfo
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -4383,8 +4462,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1491627850, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
+      propertyPath: m_Name
+      value: Inductive proximity sensor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1491627850, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1491627850, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
+      propertyPath: m_TagString
+      value: mouseHoverInfo
       objectReference: {fileID: 0}
     - target: {fileID: 1491627851, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_LocalScale.x
@@ -4525,11 +4612,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Name
-      value: Part_AV
+      value: Through beam sensor
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
+      propertyPath: m_TagString
+      value: mouseHoverInfo
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -4648,8 +4739,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1491627850, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
+      propertyPath: m_Name
+      value: Through beam sensor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1491627850, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1491627850, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
+      propertyPath: m_TagString
+      value: mouseHoverInfo
       objectReference: {fileID: 0}
     - target: {fileID: 1491627851, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_LocalScale.x
@@ -4659,7 +4758,8 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -17.17
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 22227760, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
 --- !u!224 &1051509157 stripped
 RectTransform:
@@ -4756,11 +4856,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Name
-      value: 1B2
+      value: Magnetic sensor
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
+      propertyPath: m_TagString
+      value: mouseHoverInfo
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -4856,7 +4960,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 22495902, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 21.16
+      value: 21.05
       objectReference: {fileID: 0}
     - target: {fileID: 22495902, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -4875,8 +4979,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1491627850, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
+      propertyPath: m_Name
+      value: Magnetic sensor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1491627850, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1491627850, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
+      propertyPath: m_TagString
+      value: mouseHoverInfo
       objectReference: {fileID: 0}
     - target: {fileID: 1491627851, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_LocalScale.x
@@ -4886,7 +4998,8 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -17.17
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 22227760, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
 --- !u!224 &1100748734 stripped
 RectTransform:
@@ -4904,7 +5017,6 @@ GameObject:
   - component: {fileID: 1126704684}
   - component: {fileID: 1126704687}
   - component: {fileID: 1126704686}
-  - component: {fileID: 1126704685}
   m_Layer: 10
   m_Name: C5
   m_TagString: Untagged
@@ -4931,14 +5043,6 @@ RectTransform:
   m_AnchoredPosition: {x: 23.68, y: -6.6}
   m_SizeDelta: {x: 28.005241, y: 4.035484}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &1126704685
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1126704683}
-  m_CullTransparentMesh: 1
 --- !u!114 &1126704686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5072,6 +5176,11 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!4 &1132300480 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 824738621922545608, guid: 4cd173d42e258094ba589b619cffdc3a, type: 3}
+  m_PrefabInstance: {fileID: 788460235}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1136840293
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5081,11 +5190,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Name
-      value: Part_AV
+      value: Diffuse sensor
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
+      propertyPath: m_TagString
+      value: mouseHoverInfo
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -5200,8 +5313,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1491627850, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
+      propertyPath: m_Name
+      value: 'Diffuse sensor '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1491627850, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1491627850, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
+      propertyPath: m_TagString
+      value: mouseHoverInfo
       objectReference: {fileID: 0}
     - target: {fileID: 1491627851, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_LocalScale.x
@@ -5211,7 +5332,8 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -17.17
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 22227760, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
 --- !u!224 &1136840294 stripped
 RectTransform:
@@ -5347,11 +5469,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Name
-      value: Part_AV
+      value: 'Diffuse sensor '
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Layer
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
+      propertyPath: m_TagString
+      value: mouseHoverInfo
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -5470,8 +5596,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1491627850, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
+      propertyPath: m_Name
+      value: 'Diffuse sensor '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1491627850, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Layer
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1491627850, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
+      propertyPath: m_TagString
+      value: mouseHoverInfo
       objectReference: {fileID: 0}
     - target: {fileID: 1491627851, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_LocalScale.x
@@ -5479,9 +5613,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1491627851, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -17.17
+      value: -17.1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1491627851, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.4
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 22227760, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
 --- !u!224 &1204384942 stripped
 RectTransform:
@@ -5493,6 +5632,78 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 22495902, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
   m_PrefabInstance: {fileID: 585661518}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1247987789
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1247987790}
+  - component: {fileID: 1247987792}
+  - component: {fileID: 1247987791}
+  m_Layer: 5
+  m_Name: RawImage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1247987790
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247987789}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalScale: {x: 0.41422, y: 0.41422004, z: 0.41422004}
+  m_Children: []
+  m_Father: {fileID: 717862613}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.019, y: -3.981}
+  m_SizeDelta: {x: 1198.22, y: 77.33}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1247987791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247987789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.9056604, g: 0.9056604, b: 0.9056604, a: 0.31764707}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 0}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &1247987792
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247987789}
+  m_CullTransparentMesh: 1
 --- !u!1 &1302162566
 GameObject:
   m_ObjectHideFlags: 0
@@ -5504,7 +5715,6 @@ GameObject:
   - component: {fileID: 1302162567}
   - component: {fileID: 1302162570}
   - component: {fileID: 1302162569}
-  - component: {fileID: 1302162568}
   m_Layer: 10
   m_Name: C2
   m_TagString: Untagged
@@ -5531,14 +5741,6 @@ RectTransform:
   m_AnchoredPosition: {x: -5.27, y: -6.6}
   m_SizeDelta: {x: 28.005241, y: 4.035484}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &1302162568
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1302162566}
-  m_CullTransparentMesh: 1
 --- !u!114 &1302162569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5967,6 +6169,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piece (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1826928909295970280, guid: 4cd173d42e258094ba589b619cffdc3a, type: 3}
+      propertyPath: m_TagString
+      value: mouseHoverInfo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4cd173d42e258094ba589b619cffdc3a, type: 3}
 --- !u!4 &1401260625 stripped
@@ -5983,11 +6189,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Name
-      value: 2B2
+      value: Magnetic sensor
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Layer
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
+      propertyPath: m_TagString
+      value: mouseHoverInfo
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -6102,8 +6312,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1491627850, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
+      propertyPath: m_Name
+      value: Magnetic sensor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1491627850, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Layer
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1491627850, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
+      propertyPath: m_TagString
+      value: mouseHoverInfo
       objectReference: {fileID: 0}
     - target: {fileID: 1491627851, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_LocalScale.x
@@ -6113,7 +6331,8 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -17.17
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 22227760, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
 --- !u!1 &1490163119
 GameObject:
@@ -6249,11 +6468,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Name
-      value: M2
+      value: 'Magnetic Proximity Sensor '
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
+      propertyPath: m_TagString
+      value: mouseHoverInfo
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -6372,8 +6595,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1491627850, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
+      propertyPath: m_Name
+      value: 'Magnetic Proximity Sensor '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1491627850, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1491627850, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
+      propertyPath: m_TagString
+      value: mouseHoverInfo
       objectReference: {fileID: 0}
     - target: {fileID: 1491627851, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_LocalScale.x
@@ -6383,57 +6614,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -17.17
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 22227760, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
 --- !u!224 &1605088082 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 22495902, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
   m_PrefabInstance: {fileID: 1605088081}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1677667784
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1677667786}
-  - component: {fileID: 1677667785}
-  m_Layer: 0
-  m_Name: spawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1677667785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1677667784}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c23b951786134440a9211c4c7588aa0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  piece: {fileID: 1826928909295970280, guid: 4cd173d42e258094ba589b619cffdc3a, type: 3}
---- !u!4 &1677667786
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1677667784}
-  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: 2.0600002, y: 1.799, z: -0.669}
-  m_LocalScale: {x: 0.25602952, y: 0.08010651, z: 0.25602952}
-  m_Children: []
-  m_Father: {fileID: 7000428990063088721}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &1683630766 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 22495902, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
@@ -6910,6 +7098,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piece (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1826928909295970280, guid: 4cd173d42e258094ba589b619cffdc3a, type: 3}
+      propertyPath: m_TagString
+      value: mouseHoverInfo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4cd173d42e258094ba589b619cffdc3a, type: 3}
 --- !u!1 &1878444973
@@ -7032,6 +7224,100 @@ RectTransform:
   m_AnchoredPosition: {x: -75, y: -278}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1946249251
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1946249252}
+  - component: {fileID: 1946249255}
+  - component: {fileID: 1946249254}
+  - component: {fileID: 1946249253}
+  m_Layer: 5
+  m_Name: info
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1946249252
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946249251}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalScale: {x: 0.21489735, y: 0.21489735, z: 0.21489735}
+  m_Children: []
+  m_Father: {fileID: 717862613}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 3.068, y: -5}
+  m_SizeDelta: {x: 1036.848, y: 149.484}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1946249253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946249251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f34de4ddf4216e449cd08589d20e840, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 1946249254}
+  cam: {fileID: 717867568}
+--- !u!114 &1946249254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946249251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 83
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 83
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &1946249255
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946249251}
+  m_CullTransparentMesh: 1
 --- !u!1 &1970934503
 GameObject:
   m_ObjectHideFlags: 0
@@ -7043,10 +7329,9 @@ GameObject:
   - component: {fileID: 1970934504}
   - component: {fileID: 1970934507}
   - component: {fileID: 1970934506}
-  - component: {fileID: 1970934505}
   m_Layer: 11
   m_Name: TYPE (1)
-  m_TagString: Untagged
+  m_TagString: mouseHoverInfo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7070,14 +7355,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0.4, y: -4.7}
   m_SizeDelta: {x: 28.005241, y: 4.035484}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &1970934505
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1970934503}
-  m_CullTransparentMesh: 1
 --- !u!114 &1970934506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7221,7 +7498,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1989977805}
   - component: {fileID: 1989977802}
-  - component: {fileID: 1989977804}
   - component: {fileID: 1989977803}
   m_Layer: 9
   m_Name: UI
@@ -7290,14 +7566,6 @@ MonoBehaviour:
   freeLookSensitivity: 3
   zoomSensitivity: 10
   fastZoomSensitivity: 50
---- !u!81 &1989977804
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1989977801}
-  m_Enabled: 1
 --- !u!4 &1989977805
 Transform:
   m_ObjectHideFlags: 0
@@ -7367,6 +7635,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: piece (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1826928909295970280, guid: 4cd173d42e258094ba589b619cffdc3a, type: 3}
+      propertyPath: m_TagString
+      value: mouseHoverInfo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4cd173d42e258094ba589b619cffdc3a, type: 3}
 --- !u!1001 &2059598067
@@ -7378,11 +7650,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Name
-      value: M1
+      value: 'Magnetic Proximity Sensor '
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
+      propertyPath: m_TagString
+      value: mouseHoverInfo
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -7501,8 +7777,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1491627850, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
+      propertyPath: m_Name
+      value: 'Magnetic Proximity Sensor '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1491627850, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1491627850, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
+      propertyPath: m_TagString
+      value: mouseHoverInfo
       objectReference: {fileID: 0}
     - target: {fileID: 1491627851, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
       propertyPath: m_LocalScale.x
@@ -7512,7 +7796,8 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -17.17
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 22227760, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a6e39ced0ea046bcb636c3f0b2e2a745, type: 3}
 --- !u!224 &2059598068 stripped
 RectTransform:
@@ -7772,7 +8057,7 @@ GameObject:
   - component: {fileID: 1397319219850905931}
   m_Layer: 0
   m_Name: Clamper
-  m_TagString: Untagged
+  m_TagString: mouseHoverInfo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7852,7 +8137,7 @@ GameObject:
   - component: {fileID: 1705333037900627784}
   m_Layer: 0
   m_Name: Conveyor Belt
-  m_TagString: Untagged
+  m_TagString: mouseHoverInfo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7940,7 +8225,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1826928909295970280, guid: 4cd173d42e258094ba589b619cffdc3a, type: 3}
       propertyPath: m_Name
-      value: piece
+      value: piece (0)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1826928909295970280, guid: 4cd173d42e258094ba589b619cffdc3a, type: 3}
+      propertyPath: m_TagString
+      value: mouseHoverInfo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4cd173d42e258094ba589b619cffdc3a, type: 3}
@@ -8092,8 +8381,8 @@ GameObject:
   - component: {fileID: 2805127145082002555}
   - component: {fileID: 2805127145082002556}
   m_Layer: 0
-  m_Name: Cylinder003
-  m_TagString: Untagged
+  m_Name: Vaccum
+  m_TagString: mouseHoverInfo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8392,8 +8681,8 @@ GameObject:
   - component: {fileID: 4833726610564208315}
   - component: {fileID: 4833726610564208316}
   m_Layer: 0
-  m_Name: Magazine Cylinder
-  m_TagString: Untagged
+  m_Name: Linear cylinder
+  m_TagString: mouseHoverInfo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8654,9 +8943,10 @@ GameObject:
   - component: {fileID: 2741788506134757928}
   - component: {fileID: 951633253661589476}
   - component: {fileID: 6617260790015490498}
+  - component: {fileID: 6617260790015490499}
   m_Layer: 0
   m_Name: Swivel Drive
-  m_TagString: Untagged
+  m_TagString: mouseHoverInfo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8680,6 +8970,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &6617260790015490499
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6617260790015490497}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16806023, y: 1.1264395, z: 0.15681826}
+  m_Center: {x: -0.000000029720407, y: 0.52988696, z: 0.07840932}
 --- !u!33 &6703590699112415283
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -8717,7 +9020,6 @@ Transform:
   - {fileID: 4845359958407296191}
   - {fileID: 1590206706748080558}
   - {fileID: 811009855421477388}
-  - {fileID: 1677667786}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
@@ -9019,10 +9321,9 @@ GameObject:
   - component: {fileID: 8280148181994744789}
   - component: {fileID: 8280148181972480299}
   - component: {fileID: 8280148181981731339}
-  - component: {fileID: 8280148181994488443}
   m_Layer: 11
   m_Name: COUNTER MAGAZIN
-  m_TagString: Untagged
+  m_TagString: mouseHoverInfo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9119,14 +9420,6 @@ MonoBehaviour:
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
---- !u!222 &8280148181994488443
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8280148181974675435}
-  m_CullTransparentMesh: 1
 --- !u!224 &8280148181994744789
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9143,7 +9436,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -39.2, y: 12.16}
+  m_AnchoredPosition: {x: -39.2, y: 13.8}
   m_SizeDelta: {x: 28.005241, y: 4.035484}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &8311279672553973377
@@ -9159,8 +9452,8 @@ GameObject:
   - component: {fileID: 2958996764165800442}
   - component: {fileID: 8311279672553973378}
   m_Layer: 7
-  m_Name: P2
-  m_TagString: Untagged
+  m_Name: Magnetic sensor
+  m_TagString: mouseHoverInfo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9208,7 +9501,7 @@ GameObject:
   - component: {fileID: 8380935054592792347}
   m_Layer: 7
   m_Name: Handling Device
-  m_TagString: Untagged
+  m_TagString: mouseHoverInfo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9254,7 +9547,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c5e1b0ceb5165c4b9f7d5d902fae008, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StationManager: {fileID: 2118875015}
+  PLC_Output_Manager: {fileID: 2118875015}
 --- !u!1 &8580540442335026406
 GameObject:
   m_ObjectHideFlags: 0
@@ -9268,8 +9561,8 @@ GameObject:
   - component: {fileID: 3930015607069560572}
   - component: {fileID: 8580540442335026407}
   m_Layer: 0
-  m_Name: Dispensor
-  m_TagString: Untagged
+  m_Name: Dispenser
+  m_TagString: mouseHoverInfo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9357,14 +9650,6 @@ RectTransform:
   m_AnchoredPosition: {x: -16.83, y: 3.72}
   m_SizeDelta: {x: 28.005241, y: 4.035484}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &9109487051121402915
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9109487051141417395}
-  m_CullTransparentMesh: 1
 --- !u!1 &9109487051141417395
 GameObject:
   m_ObjectHideFlags: 0
@@ -9376,14 +9661,27 @@ GameObject:
   - component: {fileID: 9109487051121151373}
   - component: {fileID: 9109487051143419763}
   - component: {fileID: 9109487051151146067}
-  - component: {fileID: 9109487051121402915}
+  - component: {fileID: 9109487051141417396}
   m_Layer: 11
-  m_Name: TYPE
-  m_TagString: Untagged
+  m_Name: 'Diffuse color sensor '
+  m_TagString: mouseHoverInfo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &9109487051141417396
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9109487051141417395}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 13.840415, y: 6.964932, z: 1.2986325}
+  m_Center: {x: -6.9202075, y: -1.87067, z: -0.64931566}
 --- !u!23 &9109487051143419763
 MeshRenderer:
   m_ObjectHideFlags: 0

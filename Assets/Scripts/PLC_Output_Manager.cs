@@ -114,50 +114,22 @@ namespace festo
                 handlingDevice.Sleep();
                 if (handlingStoped == false)
                 {
-                    writeLeft(false);
-                    writeRight(false);
                     handlingStoped = true;
                 }
             }
         }
 
-        private static void ServiceCallHandlerWriteLeft(WriteResponse message)
+        private static void ServiceCallHandlerWrite(WriteResponse message)
         {
             print(message.error_message);
         }
 
-        private static void ServiceCallHandlerWriteRight(WriteResponse message)
+        public void writeValue(bool onoff, string id)
         {
-            print(message.error_message);
-        }
-
-        private static void ServiceCallHandlerWriteDown(WriteResponse message)
-        {
-            print(message.error_message);
-        }
-
-        public void writeLeft(bool onoff)
-        {
-            Address nodeLeft = new Address("ns=4;i=24", "");
+            Address nodeLeft = new Address("ns=4;i="+id+"", "");
             TypeValue typevalueLeft = new TypeValue("bool", onoff, (sbyte)0, (byte)0, 0, 0, 0, 0, 0, 0, 0, 0, "");
             WriteRequest requestLeft = new WriteRequest(nodeLeft, typevalueLeft);
-            RosConnector.RosSocket.CallService<WriteRequest, WriteResponse>("/opcua/opcua_client/write", ServiceCallHandlerWriteLeft, requestLeft);
-        }
-
-        public void writeRight(bool onoff)
-        {
-            Address nodeRight = new Address("ns=4;i=25", "");
-            TypeValue typevalueRight = new TypeValue("bool", onoff, (sbyte)0, (byte)0, 0, 0, 0, 0, 0, 0, 0, 0, "");
-            WriteRequest requestRight = new WriteRequest(nodeRight, typevalueRight);
-            RosConnector.RosSocket.CallService<WriteRequest, WriteResponse>("/opcua/opcua_client/write", ServiceCallHandlerWriteRight, requestRight);
-        }
-
-        public void writeDown(bool onoff)
-        {
-            Address nodeDown = new Address("ns=4;i=25", "");
-            TypeValue typevalueDown = new TypeValue("bool", onoff, (sbyte)0, (byte)0, 0, 0, 0, 0, 0, 0, 0, 0, "");
-            WriteRequest requestDown = new WriteRequest(nodeDown, typevalueDown);
-            RosConnector.RosSocket.CallService<WriteRequest, WriteResponse>("/opcua/opcua_client/write", ServiceCallHandlerWriteLeft, requestDown);
+            RosConnector.RosSocket.CallService<WriteRequest, WriteResponse>("/opcua/opcua_client/write", ServiceCallHandlerWrite, requestLeft);
         }
     }
 }

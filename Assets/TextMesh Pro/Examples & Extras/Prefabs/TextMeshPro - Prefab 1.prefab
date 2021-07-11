@@ -11,10 +11,9 @@ GameObject:
   - component: {fileID: 22495902}
   - component: {fileID: 2300000}
   - component: {fileID: 11400000}
-  - component: {fileID: 22227760}
-  m_Layer: 5
+  m_Layer: 10
   m_Name: TextMeshPro - Prefab 1
-  m_TagString: Untagged
+  m_TagString: mouseHoverInfo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,7 +27,7 @@ RectTransform:
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.15952268, y: 0.15952268, z: 0.15952268}
+  m_LocalScale: {x: 0.29851738, y: 0.29851738, z: 0.29851738}
   m_Children:
   - {fileID: 1491627851}
   m_Father: {fileID: 0}
@@ -100,7 +99,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Part available
+  m_text: 1B1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -134,12 +133,12 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: -47.17
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -172,14 +171,6 @@ MonoBehaviour:
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
---- !u!222 &22227760
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100000}
-  m_CullTransparentMesh: 1
 --- !u!1 &1491627850
 GameObject:
   m_ObjectHideFlags: 0
@@ -192,8 +183,8 @@ GameObject:
   - component: {fileID: 1491627854}
   - component: {fileID: 1491627853}
   - component: {fileID: 1491627852}
-  m_Layer: 5
-  m_Name: w
+  m_Layer: 10
+  m_Name: Magnetic sensor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -208,14 +199,14 @@ RectTransform:
   m_GameObject: {fileID: 1491627850}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.6}
-  m_LocalScale: {x: 32.26832, y: 4.503901, z: 0.79267704}
+  m_LocalScale: {x: 4.866385, y: 4.503901, z: 0.79267704}
   m_Children: []
   m_Father: {fileID: 22495902}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.16271, y: -0.1}
+  m_AnchoredPosition: {x: -17.17, y: -0.1}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!33 &1491627854
