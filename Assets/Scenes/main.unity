@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18333906, g: 0.22714458, b: 0.29564124, a: 1}
+  m_IndirectSpecularColor: {r: 0.4514143, g: 0.50056756, b: 0.57052, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2535,13 +2535,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
-  m_LocalRotation: {x: 0.11056337, y: -0.31648484, z: 0.31624874, w: 0.8874682}
-  m_LocalPosition: {x: -8.462649, y: -14.798934, z: 48.32501}
+  m_LocalRotation: {x: 0.14814171, y: -0.31182075, z: 0.32706136, w: 0.879689}
+  m_LocalPosition: {x: -8.462649, y: -14.798936, z: 48.325016}
   m_LocalScale: {x: 0.6674231, y: 0.6674231, z: 0.6674231}
   m_Children: []
   m_Father: {fileID: 963194228}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 50, y: -55.651, z: 0}
+  m_LocalEulerAnglesHint: {x: 27.685, y: -30.671, z: 33.058}
 --- !u!1 &711441706
 GameObject:
   m_ObjectHideFlags: 0
@@ -3937,8 +3937,7 @@ MonoBehaviour:
   SecondsTimeout: 10
   Serializer: 0
   protocol: 0
-  RosBridgeServerUrl: ws://138.250.144.210:9090
-  OPCUAServerUrlPLCHandling: opc.tcp://192.168.1.11:4840
+  RosBridgeServerUrl: ws://138.250.144.95:9090
   isConnected: 0
 --- !u!4 &942722307
 Transform:

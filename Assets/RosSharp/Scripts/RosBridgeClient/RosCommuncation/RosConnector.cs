@@ -31,7 +31,6 @@ namespace RosSharp.RosBridgeClient
         public RosSocket.SerializerEnum Serializer;
         public Protocol protocol;
         public string RosBridgeServerUrl = "ws://138.250.144.210:9090";
-        public string OPCUAServerUrlPLCHandling = "opc.tcp://192.168.1.11:4840";
         public bool isConnected;
 
         public ManualResetEvent IsConnected { get; private set; }
@@ -45,11 +44,6 @@ namespace RosSharp.RosBridgeClient
         protected void ConnectAndWait()
         {
             RosSocket = ConnectToRos(protocol, RosBridgeServerUrl, OnConnected, OnClosed, Serializer);
-
-            // OPCUA connect to server
-            ConnectRequest request = new ConnectRequest(OPCUAServerUrlPLCHandling);
-            RosSocket.CallService<ConnectRequest, ConnectResponse>("/opcua/opcua_client/connect", ServiceCallHandlerConnect, request);
-
             if (!IsConnected.WaitOne(SecondsTimeout * 1000))
                 Debug.LogWarning("Failed to connect to RosBridge at: " + RosBridgeServerUrl);
         }
@@ -77,19 +71,9 @@ namespace RosSharp.RosBridgeClient
 
         private void OnClosed(object sender, EventArgs e)
         {
-            DisconnectRequest request = new DisconnectRequest();
-            RosSocket.CallService<DisconnectRequest, DisconnectResponse>("/opcua/opcua_client/disconnect", ServiceCallHandlerDisconnect, request);
             IsConnected.Reset();
             isConnected = false;
             Debug.Log("Disconnected from RosBridge: " + RosBridgeServerUrl);
-        }
-
-        private static void ServiceCallHandlerConnect(ConnectResponse message)
-        {
-        }
-
-        private static void ServiceCallHandlerDisconnect(DisconnectResponse message)
-        {
         }
     }
 }

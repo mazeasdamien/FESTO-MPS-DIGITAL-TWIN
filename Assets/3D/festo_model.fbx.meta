@@ -2,7 +2,10 @@ fileFormatVersion: 2
 guid: 48066edac367ec547aa3863d5e7706ff
 ModelImporter:
   serializedVersion: 20200
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      74: 1827226128182048838
+    second: Take 001
   externalObjects:
   - first:
       type: UnityEngine:Material
