@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using RosSharp.RosBridgeClient.MessageTypes.RosOpcua;
+using RosSharp.RosBridgeClient;
 
 namespace festo
 {
@@ -18,14 +19,17 @@ namespace festo
         public Animator swivelDriveToSortingStationAnimator;
 
         [Header("SORTING STATION")]
-        public bool conveyorBelt;
         public bool pieceHasCollided;
-        public bool firstFlipper;
+        public bool conveyorBelt;
         public Animator firstFlipperAnimator;
+        public OPCUASubscriber flipper1Sub;
         public bool secondFlipper;
         public Animator secondFlipperAnimator;
+        public OPCUASubscriber flipper2Sub;
         public bool clamper;
         public Animator clamperAnimator;
+        public OPCUASubscriber clamperSub;
+        public OPCUASubscriber FallingSub;
 
         [Header("HANDLING STATION")]
         public Rigidbody handlingDevice;
@@ -60,7 +64,7 @@ namespace festo
                 swivelDriveToSortingStationAnimator.SetBool("nextStation", false);
             }
 
-            if (firstFlipper)
+            if (flipper1Sub.boolValue)
             {
                 firstFlipperAnimator.SetBool("isOn", true);
             }
@@ -69,7 +73,7 @@ namespace festo
                 firstFlipperAnimator.SetBool("isOn", false);
             }
 
-            if (secondFlipper)
+            if (flipper2Sub.boolValue)
             {
                 secondFlipperAnimator.SetBool("isOn", true);
             }
@@ -78,7 +82,7 @@ namespace festo
                 secondFlipperAnimator.SetBool("isOn", false);
             }
 
-            if (clamper)
+            if (clamperSub.boolValue)
             {
                 clamperAnimator.SetBool("isOn", true);
             }
@@ -117,19 +121,6 @@ namespace festo
                     handlingStoped = true;
                 }
             }
-        }
-
-        private static void ServiceCallHandlerWrite(WriteResponse message)
-        {
-            print(message.error_message);
-        }
-
-        public void writeValue(bool onoff, string id)
-        {
-            Address nodeLeft = new Address("ns=4;i="+id+"", "");
-            TypeValue typevalueLeft = new TypeValue("bool", onoff, (sbyte)0, (byte)0, 0, 0, 0, 0, 0, 0, 0, 0, "");
-            WriteRequest requestLeft = new WriteRequest(nodeLeft, typevalueLeft);
-            RosConnector.RosSocket.CallService<WriteRequest, WriteResponse>("/opcua/opcua_client/write", ServiceCallHandlerWrite, requestLeft);
         }
     }
 }

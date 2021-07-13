@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using RosSharp.RosBridgeClient;
 
 namespace festo
 {
@@ -11,6 +12,7 @@ namespace festo
         public Vector3 direction;
         public List<GameObject> onBelt;
         private Material mymat;
+        public OPCUASubscriber pieceAvailableSub;
 
         public float ScrollY = 0.05f;
         private void Start()
@@ -25,8 +27,9 @@ namespace festo
             else
                 direction = new Vector3(1, 0, 0);
 
-            if (stationsManager.conveyorBelt)
+            if (pieceAvailableSub.boolValue)
             {
+                stationsManager.conveyorBelt = true;
                 for (int i = 0; i <= onBelt.Count - 1; i++)
                 {
                     onBelt[i].GetComponent<Rigidbody>().velocity = speed * direction * Time.deltaTime;
@@ -34,6 +37,8 @@ namespace festo
                 float offSetY = Time.fixedTime * ScrollY;
                 GetComponent<Renderer>().material.mainTextureOffset = new Vector2(0, -offSetY);
             }
+            else
+            { stationsManager.conveyorBelt = false; }
         }
 
         private void OnCollisionEnter(Collision collision)
