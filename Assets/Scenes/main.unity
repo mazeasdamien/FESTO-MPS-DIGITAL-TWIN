@@ -2903,7 +2903,7 @@ Camera:
   far clip plane: 199.8
   field of view: 48
   orthographic: 1
-  orthographic size: 49.5
+  orthographic size: 41.4
   m_Depth: -0.65
   m_CullingMask:
     serializedVersion: 2
@@ -2927,7 +2927,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 717867565}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 14.7, y: 37.1, z: 37.4}
+  m_LocalPosition: {x: 11.9, y: 37.1, z: 33.7}
   m_LocalScale: {x: 0.75613207, y: 0.75613207, z: 0.75613207}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3392,15 +3392,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 824738621922545608, guid: 4cd173d42e258094ba589b619cffdc3a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -20.6
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 824738621922545608, guid: 4cd173d42e258094ba589b619cffdc3a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 24.37
+      value: 8.97
       objectReference: {fileID: 0}
     - target: {fileID: 824738621922545608, guid: 4cd173d42e258094ba589b619cffdc3a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.69
+      value: 0.88
       objectReference: {fileID: 0}
     - target: {fileID: 824738621922545608, guid: 4cd173d42e258094ba589b619cffdc3a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4224,7 +4224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d337977a8ed4ba044b9734dc2f36da74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Topic: 
+  Topic: /sorting/sorting_client/falling
   TimeStep: 0
   mat: {fileID: 804650166}
   boolValue: 0
@@ -4242,7 +4242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d337977a8ed4ba044b9734dc2f36da74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Topic: 
+  Topic: /sorting/sorting_client/clamper
   TimeStep: 0
   mat: {fileID: 1978777059}
   boolValue: 0
@@ -4260,7 +4260,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d337977a8ed4ba044b9734dc2f36da74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Topic: 
+  Topic: /sorting/sorting_client/secondflipper
   TimeStep: 0
   mat: {fileID: 1511197596}
   boolValue: 0
@@ -4278,7 +4278,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d337977a8ed4ba044b9734dc2f36da74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Topic: 
+  Topic: /sorting/sorting_client/firstflipper
   TimeStep: 0
   mat: {fileID: 1077005619}
   boolValue: 0
@@ -4296,7 +4296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d337977a8ed4ba044b9734dc2f36da74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Topic: 
+  Topic: /sorting/sorting_client/sortingpartAV
   TimeStep: 0
   mat: {fileID: 1376473823}
   boolValue: 0
@@ -8354,6 +8354,7 @@ MonoBehaviour:
   clamperAnimator: {fileID: 1397319219850905930}
   clamperSub: {fileID: 942722310}
   FallingSub: {fileID: 942722309}
+  pieceAvailableSub: {fileID: 0}
   handlingDevice: {fileID: 8380935054592792345}
   handlingDeviceRight: 0
   handlingDeviceLeft: 0
@@ -8635,7 +8636,6 @@ MonoBehaviour:
   speed: 150
   direction: {x: 1, y: 0, z: 0}
   onBelt: []
-  pieceAvailableSub: {fileID: 942722313}
   ScrollY: 0.13
 --- !u!1001 &1878822319254451099
 PrefabInstance:

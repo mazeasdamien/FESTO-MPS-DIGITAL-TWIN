@@ -30,6 +30,7 @@ namespace festo
         public Animator clamperAnimator;
         public OPCUASubscriber clamperSub;
         public OPCUASubscriber FallingSub;
+        public OPCUASubscriber pieceAvailableSub;
 
         [Header("HANDLING STATION")]
         public Rigidbody handlingDevice;
@@ -46,6 +47,15 @@ namespace festo
 
         private void FixedUpdate()
         {
+            if (pieceAvailableSub.boolValue)
+            {
+                conveyorBelt = true;
+            }
+            else if (FallingSub.boolValue)
+            {
+                conveyorBelt = false;
+            }
+
             if (magazineCylinder)
             {
                 magazineCylinderAnimator.SetBool("isON", true);
