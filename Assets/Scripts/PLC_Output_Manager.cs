@@ -14,9 +14,12 @@ namespace festo
         private bool handlingStoped;
 
         [Header("DISTRIBUTING STATION")]
-        public bool magazineCylinder;
+        public OPCUASubscriber magazineCylinderSub;
         public Animator magazineCylinderAnimator;
-        public bool vacuumSwitches;
+        public MeshRenderer M1;
+        public MeshRenderer M2;
+        public bool isSucking;
+        public OPCUASubscriber isSuckingSub;
         public bool swivelDriveToSortingStation;
         public Animator swivelDriveToSortingStationAnimator;
 
@@ -59,14 +62,20 @@ namespace festo
                 conveyorBelt = false;
             }
 
-            if (magazineCylinder)
+            #region Magasine
+            if (magazineCylinderSub.boolValue)
             {
+                M1.material.color = Color.red;
+                M2.material.color = Color.green;
                 magazineCylinderAnimator.SetBool("isON", true);
             }
             else
             {
+                M2.material.color = Color.red;
+                M1.material.color = Color.green;
                 magazineCylinderAnimator.SetBool("isON", false);
             }
+            #endregion
 
             if (swivelDriveToSortingStation)
             {
