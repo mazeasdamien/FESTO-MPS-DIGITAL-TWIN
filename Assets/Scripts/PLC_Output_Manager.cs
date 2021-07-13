@@ -8,6 +8,8 @@ namespace festo
 {
     public class PLC_Output_Manager : MonoBehaviour
     {
+        public enum MatPiece { red, black, metal };
+        public MatPiece mat;
         public RosSharp.RosBridgeClient.RosConnector RosConnector;
         private bool handlingStoped;
 
@@ -43,6 +45,7 @@ namespace festo
         private void Start()
         {
             handlingStoped = true;
+            mat = MatPiece.black;
         }
 
         private void FixedUpdate()
@@ -76,29 +79,33 @@ namespace festo
 
             if (flipper1Sub.boolValue)
             {
+                mat = MatPiece.metal;
                 firstFlipperAnimator.SetBool("isOn", true);
             }
             else
             {
+                mat = MatPiece.black;
                 firstFlipperAnimator.SetBool("isOn", false);
             }
 
             if (flipper2Sub.boolValue)
             {
+                mat = MatPiece.red;
                 secondFlipperAnimator.SetBool("isOn", true);
             }
             else
             {
+                mat = MatPiece.black;
                 secondFlipperAnimator.SetBool("isOn", false);
             }
 
             if (clamperSub.boolValue)
             {
-                clamperAnimator.SetBool("isOn", true);
+                clamperAnimator.SetBool("isOn", false);
             }
             else
             {
-                clamperAnimator.SetBool("isOn", false);
+                clamperAnimator.SetBool("isOn", true);
             }
 
             if (liftingCylinder)
