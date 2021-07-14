@@ -12,24 +12,7 @@ namespace festo
         public float speed;
         public Vector3 direction;
         public List<GameObject> onBelt;
-        private Material mymat;
-
-        public TMP_Text metal;
-        public TMP_Text red;
-        public TMP_Text black;
-
-        public int m;
-        public int r;
-        public int b;
-
         public float ScrollY = 0.05f;
-        private void Start()
-        {
-            mymat = GetComponent<Renderer>().material;
-            m = 0;
-            r = 0;
-            b = 0;
-        }
 
         void FixedUpdate()
         {
@@ -54,21 +37,6 @@ namespace festo
 
         private void OnCollisionExit(Collision collision)
         {
-            if (collision.gameObject.GetComponent<MeshRenderer>().material.color == Color.grey) 
-            {
-                m = m + 1;
-                metal.text = m.ToString();
-            }
-            else if (collision.gameObject.GetComponent<MeshRenderer>().material.color == Color.red)
-            {
-                r = r + 1;
-                red.text = r.ToString();
-            }
-            else if (collision.gameObject.GetComponent<MeshRenderer>().material.color == Color.black)
-            {
-                b = b + 1;
-                black.text = b.ToString();
-            }
 
             onBelt.Remove(collision.gameObject);
         }
