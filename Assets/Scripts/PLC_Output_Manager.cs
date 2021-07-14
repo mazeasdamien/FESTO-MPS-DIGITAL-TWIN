@@ -18,9 +18,10 @@ namespace festo
         public Animator magazineCylinderAnimator;
         public MeshRenderer M1;
         public MeshRenderer M2;
-        public bool isSucking;
+        public GameObject piecemagasine;
         public OPCUASubscriber isSuckingSub;
-        public bool swivelDriveToSortingStation;
+        public OPCUASubscriber swivelDriveToSortingStationSub;
+        public OPCUASubscriber swivelDriveToMagasineStationSub;
         public Animator swivelDriveToSortingStationAnimator;
 
         [Header("SORTING STATION")]
@@ -28,10 +29,8 @@ namespace festo
         public bool conveyorBelt;
         public Animator firstFlipperAnimator;
         public OPCUASubscriber flipper1Sub;
-        public bool secondFlipper;
         public Animator secondFlipperAnimator;
         public OPCUASubscriber flipper2Sub;
-        public bool clamper;
         public Animator clamperAnimator;
         public OPCUASubscriber clamperSub;
         public OPCUASubscriber FallingSub;
@@ -44,6 +43,8 @@ namespace festo
         public bool liftingCylinder;
         public bool gripperClose;
         public Animator liftingCylinderAnimator;
+        public OPCUASubscriber goDown;
+        public MeshRenderer deuxB2;
 
         private void Start()
         {
@@ -67,6 +68,7 @@ namespace festo
             {
                 M1.material.color = Color.red;
                 M2.material.color = Color.green;
+                piecemagasine.SetActive(true);
                 magazineCylinderAnimator.SetBool("isON", true);
             }
             else
@@ -77,11 +79,12 @@ namespace festo
             }
             #endregion
 
-            if (swivelDriveToSortingStation)
+            if (swivelDriveToSortingStationSub.boolValue)
             {
+                piecemagasine.SetActive(false);
                 swivelDriveToSortingStationAnimator.SetBool("nextStation", true);
             }
-            else
+            if (swivelDriveToMagasineStationSub.boolValue)
             {
                 swivelDriveToSortingStationAnimator.SetBool("nextStation", false);
             }
@@ -93,7 +96,7 @@ namespace festo
             }
             else
             {
-                mat = MatPiece.black;
+                conveyorBelt = false;
                 firstFlipperAnimator.SetBool("isOn", false);
             }
 
@@ -104,9 +107,12 @@ namespace festo
             }
             else
             {
-                mat = MatPiece.black;
+                conveyorBelt = false;
                 secondFlipperAnimator.SetBool("isOn", false);
             }
+
+            if (flipper1Sub.boolValue == false && flipper2Sub.boolValue == false)
+                mat = MatPiece.black;
 
             if (clamperSub.boolValue)
             {
@@ -147,6 +153,12 @@ namespace festo
                     handlingStoped = true;
                 }
             }
+
+            if (!goDown.boolValue)
+                deuxB2.material.color = Color.green;
+            else
+                deuxB2.material.color = Color.red;
+
         }
     }
 }

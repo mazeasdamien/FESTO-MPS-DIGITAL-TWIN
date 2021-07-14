@@ -1,21 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using RosSharp.RosBridgeClient.MessageTypes.RosOpcua;
+using RosSharp.RosBridgeClient;
+
 namespace festo
 {
     public class handlingDevice : MonoBehaviour
     {
         public PLC_Output_Manager PLC_Output_Manager;
+        public OPCUASubscriber godown;
+        public OPCUASubscriber goleft;
+        public OPCUASubscriber goright;
+        public OPCUASubscriber gripper;
 
         void Update()
         {
-            if (Input.GetKey(KeyCode.RightArrow))
+            if (goright.boolValue)
             {
                 PLC_Output_Manager.handlingDeviceLeft = false;
                 PLC_Output_Manager.handlingDeviceRight = true;
 
             }
-            else if (Input.GetKey(KeyCode.LeftArrow))
+            else if (goleft.boolValue)
             {
                 PLC_Output_Manager.handlingDeviceRight = false;
                 PLC_Output_Manager.handlingDeviceLeft = true;
@@ -27,7 +34,7 @@ namespace festo
                 PLC_Output_Manager.handlingDeviceLeft = false;
             }
 
-            if (Input.GetKey(KeyCode.DownArrow))
+            if (godown.boolValue)
             {
                     PLC_Output_Manager.liftingCylinder = true;
 
@@ -39,7 +46,7 @@ namespace festo
 
             }
 
-            if (Input.GetKey(KeyCode.Space))
+            if (gripper.boolValue)
             {
                 PLC_Output_Manager.gripperClose = true;
 

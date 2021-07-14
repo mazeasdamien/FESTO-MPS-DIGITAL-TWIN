@@ -17,7 +17,7 @@ namespace festo {
         {
             if (other.gameObject.layer == 7)
             {
-                if (StationManager.isSucking)
+                if (StationManager.isSuckingSub.boolValue)
                 {
                     fj.connectedBody = other.gameObject.GetComponent<Rigidbody>();
                 }

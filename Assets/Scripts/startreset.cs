@@ -9,20 +9,56 @@ namespace festo
     public class startreset : MonoBehaviour
     {
 
-        void StartDistributing(RosSharp.RosBridgeClient.RosConnector RosConnector)
+        public void StartDistributing(RosSharp.RosBridgeClient.RosConnector RosConnector)
         {
-            WriteRequest request = new WriteRequest();
-            //RosConnector.RosSocket.CallService<WriteRequest,ReadResponse>("/distributing/distributing_client/write", ServiceCallHandlerWrite, request)
+            StartCoroutine(StartD(RosConnector));
         }
 
-        void ResetDistributing(RosSharp.RosBridgeClient.RosConnector RosConnector)
+        public void ResetDistributing(RosSharp.RosBridgeClient.RosConnector RosConnector)
         {
-
+            StartCoroutine(ResetD(RosConnector));
         }
 
-        private static void ServiceCallHandlerWrite(ConnectResponse message)
+        public void StartSorting(RosSharp.RosBridgeClient.RosConnector RosConnector)
+        {
+            StartCoroutine(StartS(RosConnector));
+        }
+
+        public void ResetSorting(RosSharp.RosBridgeClient.RosConnector RosConnector)
+        {
+            StartCoroutine(ResetS(RosConnector));
+        }
+
+        private static void ServiceCallHandlerWrite(WriteResponse message)
         {
         }
 
+        IEnumerator StartD(RosSharp.RosBridgeClient.RosConnector RosConnector)
+        {
+            RosConnector.RosSocket.CallService<WriteRequest, WriteResponse>("/distributing/distributing_client/write", ServiceCallHandlerWrite, new WriteRequest(new Address("ns=4;i=4", "''"), new TypeValue("bool", false, 0, 0, 0, 0, 0, 0, 0, 0, 0f, 0, "")));
+            yield return new WaitForSeconds(0.5f);
+            RosConnector.RosSocket.CallService<WriteRequest, WriteResponse>("/distributing/distributing_client/write", ServiceCallHandlerWrite, new WriteRequest(new Address("ns=4;i=2", "''"), new TypeValue("bool", true, 0, 0, 0, 0, 0, 0, 0, 0, 0f, 0, "")));
+        }
+
+        IEnumerator ResetD(RosSharp.RosBridgeClient.RosConnector RosConnector)
+        {
+            RosConnector.RosSocket.CallService<WriteRequest, WriteResponse>("/distributing/distributing_client/write", ServiceCallHandlerWrite, new WriteRequest(new Address("ns=4;i=2", "''"), new TypeValue("bool", false, 0, 0, 0, 0, 0, 0, 0, 0, 0f, 0, "")));
+            yield return new WaitForSeconds(0.5f);
+            RosConnector.RosSocket.CallService<WriteRequest, WriteResponse>("/distributing/distributing_client/write", ServiceCallHandlerWrite, new WriteRequest(new Address("ns=4;i=4", "''"), new TypeValue("bool", true, 0, 0, 0, 0, 0, 0, 0, 0, 0f, 0, "")));
+        }
+
+        IEnumerator StartS(RosSharp.RosBridgeClient.RosConnector RosConnector)
+        {
+            RosConnector.RosSocket.CallService<WriteRequest, WriteResponse>("/sorting/sorting_client/write", ServiceCallHandlerWrite, new WriteRequest(new Address("ns=4;i=8", "''"), new TypeValue("bool", false, 0, 0, 0, 0, 0, 0, 0, 0, 0f, 0, "")));
+            yield return new WaitForSeconds(0.5f);
+            RosConnector.RosSocket.CallService<WriteRequest, WriteResponse>("/sorting/sorting_client/write", ServiceCallHandlerWrite, new WriteRequest(new Address("ns=4;i=7", "''"), new TypeValue("bool", true, 0, 0, 0, 0, 0, 0, 0, 0, 0f, 0, "")));
+        }
+
+        IEnumerator ResetS(RosSharp.RosBridgeClient.RosConnector RosConnector)
+        {
+            RosConnector.RosSocket.CallService<WriteRequest, WriteResponse>("/sorting/sorting_client/write", ServiceCallHandlerWrite, new WriteRequest(new Address("ns=4;i=7", "''"), new TypeValue("bool", false, 0, 0, 0, 0, 0, 0, 0, 0, 0f, 0, "")));
+            yield return new WaitForSeconds(0.5f);
+            RosConnector.RosSocket.CallService<WriteRequest, WriteResponse>("/sorting/sorting_client/write", ServiceCallHandlerWrite, new WriteRequest(new Address("ns=4;i=8", "''"), new TypeValue("bool", true, 0, 0, 0, 0, 0, 0, 0, 0, 0f, 0, "")));
+        }
     }
 }
