@@ -35,9 +35,6 @@ namespace festo
         {
             if (stationsManager.pieceHasCollided)
                 direction = new Vector3(1, 0, 1);
-            else
-                direction = new Vector3(1, 0, 0);
-
 
             if (stationsManager.conveyorBelt)
             {
@@ -65,12 +62,12 @@ namespace festo
             else if (collision.gameObject.GetComponent<MeshRenderer>().material.color == Color.red)
             {
                 r = r + 1;
-                metal.text = r.ToString();
+                red.text = r.ToString();
             }
             else if (collision.gameObject.GetComponent<MeshRenderer>().material.color == Color.black)
             {
                 b = b + 1;
-                metal.text = b.ToString();
+                black.text = b.ToString();
             }
 
             onBelt.Remove(collision.gameObject);

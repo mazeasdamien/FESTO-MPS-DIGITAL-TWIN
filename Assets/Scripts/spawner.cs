@@ -8,17 +8,17 @@ namespace festo
 {
     public class spawner : MonoBehaviour
     {
-        private bool hasbeenspawn;
+        public bool hasbeenspawn;
         public PLC_Output_Manager manager;
         public GameObject instance;
         public OPCUASubscriber part_av_sorting;
         public OPCUASubscriber clamper;
         public GameObject lastinstance;
+        public GameObject nonull;
 
         // Start is called before the first frame update
         void Start()
         {
-            lastinstance = null;
             hasbeenspawn = false;
         }
 
@@ -30,6 +30,10 @@ namespace festo
                 GameObject g = Instantiate(instance, gameObject.transform.position, Quaternion.identity);
                 lastinstance = g;
                 hasbeenspawn = true;
+            }
+            else
+            {
+                lastinstance = nonull;
             }
 
             if (clamper.boolValue) 
@@ -44,7 +48,10 @@ namespace festo
                 {
                     lastinstance.GetComponent<MeshRenderer>().material.color = Color.grey;
                 }
-
+            }
+            else
+            {
+                lastinstance = nonull;
             }
         }
     }

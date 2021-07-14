@@ -12,6 +12,8 @@ namespace festo
         public MatPiece mat;
         public RosSharp.RosBridgeClient.RosConnector RosConnector;
         private bool handlingStoped;
+        public spawner spawner;
+        public conveyorBelt cb;
 
         [Header("DISTRIBUTING STATION")]
         public OPCUASubscriber magazineCylinderSub;
@@ -58,10 +60,6 @@ namespace festo
             {
                 conveyorBelt = true;
             }
-            else if (FallingSub.boolValue)
-            {
-                conveyorBelt = false;
-            }
 
             #region Magasine
             if (magazineCylinderSub.boolValue)
@@ -96,7 +94,6 @@ namespace festo
             }
             else
             {
-                conveyorBelt = false;
                 firstFlipperAnimator.SetBool("isOn", false);
             }
 
@@ -107,7 +104,6 @@ namespace festo
             }
             else
             {
-                conveyorBelt = false;
                 secondFlipperAnimator.SetBool("isOn", false);
             }
 
@@ -116,6 +112,7 @@ namespace festo
 
             if (clamperSub.boolValue)
             {
+                spawner.hasbeenspawn = false;
                 clamperAnimator.SetBool("isOn", false);
             }
             else
@@ -135,13 +132,13 @@ namespace festo
             if (handlingDeviceRight)
             {
                 handlingStoped = false;
-                handlingDevice.velocity = new Vector3(14, 0, 0);
+                handlingDevice.velocity = new Vector3(16, 0, 0);
 
             }
             else if (handlingDeviceLeft)
             {
                 handlingStoped = false;
-                handlingDevice.velocity = new Vector3(-14, 0, 0);
+                handlingDevice.velocity = new Vector3(-16, 0, 0);
 
             }
             else
