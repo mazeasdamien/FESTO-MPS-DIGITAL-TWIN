@@ -135,13 +135,13 @@ namespace festo
             if (handlingDeviceRight)
             {
                 handlingStoped = false;
-                handlingDevice.velocity = new Vector3(12, 0, 0);
+                handlingDevice.velocity = new Vector3(14, 0, 0);
 
             }
             else if (handlingDeviceLeft)
             {
                 handlingStoped = false;
-                handlingDevice.velocity = new Vector3(-12, 0, 0);
+                handlingDevice.velocity = new Vector3(-14, 0, 0);
 
             }
             else
