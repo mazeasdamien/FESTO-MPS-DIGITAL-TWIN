@@ -15,6 +15,7 @@ namespace festo
         public OPCUASubscriber clamper;
         public GameObject lastinstance;
         public GameObject nonull;
+        public GameObject sd2;
 
         // Start is called before the first frame update
         void Start()
@@ -25,7 +26,7 @@ namespace festo
         // Update is called once per frame
         void Update()
         {
-            if (part_av_sorting.boolValue && !hasbeenspawn)
+            if (sd2.!hasbeenspawn)
             {
                 GameObject g = Instantiate(instance, gameObject.transform.position, Quaternion.identity);
                 lastinstance = g;
