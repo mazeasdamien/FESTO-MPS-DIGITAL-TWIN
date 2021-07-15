@@ -48,6 +48,10 @@ namespace festo
         public OPCUASubscriber goDown;
         public MeshRenderer deuxB2;
 
+        public GameObject turner1;
+        public GameObject turner2;
+        public GameObject turner3;
+
         private void Start()
         {
             handlingStoped = true;
@@ -56,7 +60,27 @@ namespace festo
 
         private void FixedUpdate()
         {
-            if (pieceAvailableSub.boolValue)
+            if (mat == MatPiece.black)
+            {
+                turner3.SetActive(true);
+                turner2.SetActive(false);
+                turner1.SetActive(false);
+            }
+            else if (mat == MatPiece.red)
+            {
+                turner3.SetActive(false);
+                turner2.SetActive(true);
+                turner1.SetActive(false);
+            }
+            else if (mat == MatPiece.metal)
+            {
+                turner3.SetActive(false);
+                turner2.SetActive(false);
+                turner1.SetActive(true);
+            }
+
+
+                if (pieceAvailableSub.boolValue)
             {
                 conveyorBelt = true;
             }
@@ -112,7 +136,6 @@ namespace festo
 
             if (clamperSub.boolValue)
             {
-                spawner.hasbeenspawn = false;
                 clamperAnimator.SetBool("isOn", false);
             }
             else

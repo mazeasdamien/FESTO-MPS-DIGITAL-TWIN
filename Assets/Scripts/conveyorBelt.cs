@@ -16,8 +16,6 @@ namespace festo
 
         void FixedUpdate()
         {
-            if (stationsManager.pieceHasCollided)
-                direction = new Vector3(1, 0, 1);
 
             if (stationsManager.conveyorBelt)
             {
@@ -37,7 +35,6 @@ namespace festo
 
         private void OnCollisionExit(Collision collision)
         {
-
             onBelt.Remove(collision.gameObject);
         }
     }

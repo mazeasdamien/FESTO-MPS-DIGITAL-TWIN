@@ -39,16 +39,5 @@ namespace festo
             }
             
         }
-
-        private void OnCollisionStay(Collision collision)
-        {
-            if (collision.gameObject.tag == "flipper")
-            {
-                if (StationManager.conveyorBelt == true) 
-                {
-                    StationManager.pieceHasCollided = true;
-                }
-            }
-        }
     }
 }

@@ -28,7 +28,7 @@ namespace festo
             POM.conveyorBelt = false;
             n = n+1;
             counter.text = n.ToString();
-            if (n == 5)
+            if (n == 4)
             {
                 warningSign.SetActive(true);
             }
